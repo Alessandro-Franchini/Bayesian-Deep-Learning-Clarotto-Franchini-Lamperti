@@ -95,8 +95,6 @@ Thanks to the introduction of this sampling procedure, we can analyze the varian
   <img src="images/openai_gym_3.gif" width="500" />
 </p>
 
-![](images/openai_gym_3.gif)
-
 In the following figure, we first plot the 4 variables that characterize every state (position, velocity, angle and velocity of the tip). It’s a good way to visualize the evolution of the system and it allows to see if there are states which differ from the majority.
 
 
