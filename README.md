@@ -90,6 +90,11 @@ We try to train and test the cartpole problem, through the two different methods
 
 Thanks to the introduction of this sampling procedure, we can analyze the variance of choosing to go right or left at each passage from one state to the next one. In this way we may detect the states where the cartpole is more sure about its following decision and the ones where the uncertainty is higher.
 
+                 ![](images/openai_gym_3.gif)
+
+In the following figure, we first plot the 4 variables that characterize every state (position, velocity, angle and velocity of the tip). It’s a good way to visualize the evolution of the system and it allows to see if there are states which differ from the majority.
+
+
 ## Inspiration
 Adam Cobb https://adamcobb.github.io 
 
