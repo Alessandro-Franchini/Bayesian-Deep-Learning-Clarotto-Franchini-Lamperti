@@ -118,24 +118,25 @@ General plot of the states reached by the cartpole during an episode of the trai
 </p>
 
 Then we plot the variance with some of the variables of the state, in order to see if some particular states are linked to some particular points of the evolution of the variance.
-General plot of the states (angles) reached by the cartpole during an episode of the training:
+General plot of the angles reached by the cartpole during an episode of the training and the corresponding variance (of going left and right):
 
 <p align="middle">
   <img src="images/angles.png" width="400"  />
 </p>
 
 
-If we look at figures above, We can see that the variance of the decision the neural network makes is linked with the values of the angle that the pole makes with respect to the cart. We can clearly see that at t = 22, when the pole is strongly tilted towards the left, the variance of the cart decision to go right, which will make the system survive longer, is much less then the variance of the cart decision to go right. It seems that the net understands the fact that if the angle is negative, it must go to the right, otherwise the uncertainty of going to the left is much higher. This insight can be used to make the training even more efficient, since by looking at the uncertainties, we can have a clue of what the net has learned about the phenomenon.
+If we look at figures above, We can see that the variance of the decision the neural network makes is linked with the values of the angle that the pole makes with respect to the cart. We can clearly see that at t = 22, when the pole is strongly tilted towards the left (high negative angle), the variance of the cart decision to go right, which will make the system survive longer, is much less then the variance of the cart decision to go right. It seems that the net understands the fact that if the angle is negative, it must go to the right, otherwise the uncertainty of going to the left is much higher. This insight can be used to make the training even more efficient, since by looking at the uncertainties, we can have a clue of what the net has learned about the phenomenon.
 
-General plot of the states (positions) reached by the cartpole during an episode of the training:
+General plot of the positions reached by the cartpole during an episode of the training and the corresponding variance (of going left and right): 
 <p align="middle">
   <img src="images/position.png" width="400"  />
 </p>
 
-General plot of the states (velocity and velocity of the tip) reached by the cartpole during an episode of the training:
+General plot of the velocity and the velocity of the tip reached by the cartpole during an episode of the training and the corresponding variance (of going left and right):
 <p align="middle">
   <img src="images/velocity.png" width="400"  />
 </p>
+The plots concerning the other 3 state variables (positions, velocity and velocity of the tip) are less representative of the evolution of the variance. We report them too, since an in-depth study could bring up some interesting features we’ve not found.
 
 ## Inspiration
 Adam Cobb https://adamcobb.github.io 
