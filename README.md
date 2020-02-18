@@ -30,14 +30,10 @@ Moreover, you will find some files .csv (and the .gif files, equally named) corr
 
 In the _bayes_reg.py_ implementation we used an external package called  ```hamiltorch``` which we used to train the NN with the Hamiltonian MC method. To install it you have to execute the following commands:
 
+
+```
 git clone https://github.com/AdamCobb/hamiltorch.git
-
-```python
-
-import foobar
-
 cd hamiltorch
-
 pip install .
 ```
 
