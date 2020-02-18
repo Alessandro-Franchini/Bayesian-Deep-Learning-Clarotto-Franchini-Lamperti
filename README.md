@@ -49,7 +49,7 @@ The process of coding and analysing the Bayesian Neural Network and the Neural N
 3. Find the architecture of the Neural Network in which each method works best;
 4. Test the two methods on the same function 
  
-                                     f (x) = sin(3(x + 2) − (x + 2)^2) + exp(−0.2x)
+                              f (x) = sin(3(x + 2) − (x + 2)^2) + exp(−0.2x)
 
 
 We choose to maintain the same number of layers (2 hidden layers) and the same activation functions (_sin_ for the first layer, _ReLU_ for the second layer).
