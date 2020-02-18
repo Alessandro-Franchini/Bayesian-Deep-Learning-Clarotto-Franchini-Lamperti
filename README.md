@@ -78,6 +78,6 @@ The last comparison we do is about the resilience of the networks when some outl
 
 
 <p float="left">
-  <img src="images/bayesian_outliers.png" width="400" />
+  <img src="images/bayesian_outilers.png" width="400" />
   <img src="images/mc_dropout_outliers.png" width="400" />
 </p>
