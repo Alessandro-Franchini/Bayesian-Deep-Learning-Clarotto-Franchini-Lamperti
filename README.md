@@ -51,8 +51,33 @@ In the Neural Network with dropout, it’s necessary to choose which type of res
 
 If we use homoscedastic residuals, we fix the variance for all data to sigma^2=(0.3)^2, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
 
+
+If we look at the results of the neural network, we see that the uncertainty varies a lot in the two cases. When the dropout is applied with homoscedastic residuals, the uncertainty is underestimated, especially when the function becomes periodic. When the residuals are heteroscedastic and are learnt during the training phase, we remark a higher uncertainty where the function is periodic.
+
+
 <p float="left">
-  <img src="images/mc_homoscedastic.png" width="100" />
-  <img src="images/mc_heteroscedastic.png" width="100" />
+  <img src="images/mc_homoscedastic.png" width="400" />
+  <img src="images/mc_heteroscedastic.png" width="400" />
 </p>
-![MC Dropout Homoscedastic](images/mc_homoscedastic.png)![MC Dropout Homoscedastic](images/mc_heteroscedastic.png)
+
+
+**Fitness and uncertainty - Bayesian NN vs. Het- eroscedastic dropout**
+
+We look at the goodness of the fit and at the uncertainty given by the credibility intervals computed on the samples of the neural network.
+The Bayesian NN gives good results. The function is well learnt and the uncer- tainty is pretty high, especially outside the training area. The MC dropout gives almost perfect predictions and null uncertainty in U(x = 0), but underestimates the uncertainty out of the central more linear part.
+
+
+<p float="left">
+  <img src="images/hemiltonian_bayes.png" width="400" />
+  <img src="images/mc_dropout_heteroscedastic.png" width="400" />
+</p>
+
+**Fitness and uncertainty - Bayesian NN vs. Het- eroscedastic dropout**
+
+The last comparison we do is about the resilience of the networks when some outliers are added. We aim at seeing what is the method that better works when some wrong data form the training dataset. We test the two networks with 8 outliers inserted be- tween 0.5 and 2, all randomly selected around y = 2 with σ = 0.3.
+
+
+<p float="left">
+  <img src="images/bayesian_outliers.png" width="400" />
+  <img src="images/mc_dropout_outliers.png" width="400" />
+</p>
