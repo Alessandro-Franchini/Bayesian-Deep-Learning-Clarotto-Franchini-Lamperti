@@ -12,7 +12,7 @@ In this project we aim at comparing a Bayesian Neural Network trained with Hamil
 
 ## Installation guide
 
-In the _bayes_reg.py_ implementation we used an external package called  *hamiltorch* which we used to train the NN with the Hamiltonian MC method. To install it you have to execute the following commands:
+In the _bayes_reg.py_ implementation we used an external package called  ```hamiltorch``` which we used to train the NN with the Hamiltonian MC method. To install it you have to execute the following commands:
 
 git clone https://github.com/AdamCobb/hamiltorch.git
 
