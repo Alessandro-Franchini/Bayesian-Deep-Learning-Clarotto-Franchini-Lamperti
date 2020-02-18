@@ -12,6 +12,7 @@ In this project we aim at comparing a Bayesian Neural Network trained with Hamil
 
 ## Structure
 Some useful hints about our Github.
+
 In [Regression Study](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Regression_study) folder you will find the following codes: 
 
 * [MC_Dropout_homo](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Regression_study/MC_Dropout_homo.py) - Neural Network with Homoscedastic MC dropout
