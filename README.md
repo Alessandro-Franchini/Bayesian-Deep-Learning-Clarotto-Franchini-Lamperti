@@ -12,6 +12,7 @@ In this project we aim at comparing a Bayesian Neural Network trained with Hamil
 
 ## Structure
 Some useful hints about our Github.
+
 In [Papers](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Articoli) you will find the bibliography used in the study.
 
 In [Regression Study](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Regression_study) folder you will find the following codes, all regarding the regression with Neural Networks with a Bayesian approach: 
