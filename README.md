@@ -96,30 +96,31 @@ Thanks to the introduction of this sampling procedure, we can analyze the varian
 </p>
 
 In the following figure, we first plot the 4 variables that characterize every state (position, velocity, angle and velocity of the tip). It’s a good way to visualize the evolution of the system and it allows to see if there are states which differ from the majority.
+General plot of the states reached by the cartpole during an episode of the training:
 
 <p f align="middle">
   <img src="images/state.png" width="400"  />
 </p>
-*General plot of the states reached by the cartpole during an episode of the training*
 
 Then we plot the variance with some of the variables of the state, in order to see if some particular states are linked to some particular points of the evolution of the variance.
+General plot of the states (angles) reached by the cartpole during an episode of the training:
 
 <p align="middle">
   <img src="images/angles.png" width="400"  />
 </p>
-*General plot of the states (angles) reached by the cartpole during an episode of the training*
+
 
 If we look at figure above, We can see that the variance of the decision the neural network makes is linked with the values of the angle that the pole makes with respect to the cart. We can clearly see that at t = 22, when the pole is strongly tilted towards the left, the variance of the cart decision to go right, which will make the system survive longer, is much less then the variance of the cart decision to go right. It seems that the net understands the fact that if the angle is negative, it must go to the right, otherwise the uncertainty of going to the left is much higher. This insight can be used to make the training even more efficient, since by looking at the uncertainties, we can have a clue of what the net has learned about the phenomenon.
 
+General plot of the states (positions) reached by the cartpole during an episode of the training
 <p align="middle">
   <img src="images/position.png" width="400"  />
 </p>
-*General plot of the states (positions) reached by the cartpole during an episode of the training*
 
+General plot of the states (velocity and velocity of the tip) reached by the cartpole during an episode of the training:
 <p align="middle">
   <img src="images/velocity.png" width="400"  />
 </p>
-*General plot of the states (velocity and velocity of the tip) reached by the cartpole during an episode of the training*
 
 ## Inspiration
 Adam Cobb https://adamcobb.github.io 
