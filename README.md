@@ -49,7 +49,7 @@ The only variable that changes between the two nets is the number of nodes in ea
 
 In the Neural Network with dropout, it’s necessary to choose which type of residuals must be used. We test the network with both homoscedastic residuals and heteroscedastic residuals.
 
-If we use homoscedastic residuals, we fix the variance for all data to sigma^2=(0.3)^2, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
+If we use homoscedastic residuals, we fix the variance for all data to  σ= 0.3, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
 
 
 If we look at the results of the neural network, we see that the uncertainty varies a lot in the two cases. When the dropout is applied with homoscedastic residuals, the uncertainty is underestimated, especially when the function becomes periodic. When the residuals are heteroscedastic and are learnt during the training phase, we remark a higher uncertainty where the function is periodic.
@@ -81,3 +81,12 @@ The last comparison we do is about the resilience of the networks when some outl
   <img src="images/bayesian_outilers.png" width="400" />
   <img src="images/mc_dropout_outliers.png" width="400" />
 </p>
+
+From the simulations we remark that the Bayesian Neural Network tends to follow the outliers and the entire curve be higher in the area where they have been added.
+
+## Reinforcement Learning
+
+We try to train and test the cartpole problem, through the two different methods: ε- greedy algorithm and implicit Thompson sampling (via dropout). We discuss only the dropout approach, since it’s the one which deals with a Bayesian approach.
+
+Thanks to the introduction of this sampling procedure, we can analyze the variance of choosing to go right or left at each passage from one state to the next one. In this way we may detect the states where the cartpole is more sure about its following decision and the ones where the uncertainty is higher.
+
