@@ -90,3 +90,11 @@ We try to train and test the cartpole problem, through the two different methods
 
 Thanks to the introduction of this sampling procedure, we can analyze the variance of choosing to go right or left at each passage from one state to the next one. In this way we may detect the states where the cartpole is more sure about its following decision and the ones where the uncertainty is higher.
 
+## Inspiration
+Adam Cobb git clone https://adamcobb.github.io
+Javer Antoran git clone https://github.com/JavierAntoran/Bayesian-Neural-Networks
+Documentation on Q-learning git clone https://github.com/hzxsnczpku/banrinochoujou/blob/master/doc/hw.pdf
+
+## Contact
+
+
