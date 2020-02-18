@@ -74,14 +74,17 @@ If we look at the results of the neural network, we see that the uncertainty var
 
 **Fitness and uncertainty - Bayesian NN vs. Heteroscedastic dropout**
 
-We look at the goodness of the fit and at the uncertainty given by the credibility intervals computed on the samples of the neural network.
-The Bayesian NN gives good results. The function is well learnt and the uncer- tainty is pretty high, especially outside the training area. The MC dropout gives almost perfect predictions and null uncertainty in U(x = 0), but underestimates the uncertainty out of the central more linear part.
+Maybe the most important comparison to mention is the one between the two methods. We look at the goodness of the fit and at the uncertainty given by the credibility intervals computed on the samples of the neural network.
+
+The Bayesian NN gives good results. Even if the function is not perfectly predicted, the uncertainty is very good, especially outside the training area: in fact, all the function is included between the credibility interval curves (94% CI). The MC dropout gives almost perfect predictions and null uncertainty in U(x = 0), but underestimates the uncertainty out of the central part, especially where the function is periodic.
 
 
 <p float="left">
   <img src="images/hamiltonian_bayes.png" width="400" />
   <img src="images/mc_dropout_heteroscedastic.png" width="400" />
 </p>
+
+From these considerations, we can say that the two methods are good for this Bayesian regression problem with the setting we’ve chosen. We must remark that the Bayesian Neural Network has far less nodes, making it a poorer architecture, hence its capacity to estimate the good output and the uncertainty is remarkable. On the other side, as we’ve already mention, we try to focus on the time of training and, in this case, the two methods are equivalent, so that the results can be correctly compared. In any case, the two methods give satisfactory results.
 
 **Fitness and uncertainty - Bayesian NN vs. Heteroscedastic dropout**
 
@@ -93,7 +96,10 @@ The last comparison we do is about the resilience of the networks when some outl
   <img src="images/mc_dropout_outliers.png" width="400" />
 </p>
 
-From the simulations we remark that the Bayesian Neural Network tends to follow the outliers and the entire curve be higher in the area where they have been added.
+From the simulations we remark that the Bayesian Neural Network tends to follow the outliers and the entire curve is higher in the area where they have been added. The curve is flattened around the mean, especially where the function is periodic. Heteroscedastic dropout also gets worse in its performances, but maintain the predicted output almost aligned with the correct function. Moreover, it’s interesting to notice that we can play on the dropout probability in order to have some particular performances. We know, for example, that by increasing the number of nodes to be switched off, we can reduce overfitting and be more confident on the credibility interval. This is a good quality for this type on Neural Network.
+
+
+Overall we are proud of the results of the two methods on this type of regression task. It would be interesting to focus on a real dataset and obtain a similar comparison in a scenario where the estimation of the uncertainty linked to the regression could be useful for concrete tasks.
 
 ## Reinforcement Learning
 
