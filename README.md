@@ -24,16 +24,17 @@ cd hamiltorch
 pip install .
 ```
 
-In _Regression Study_ folder you will find the following codes: 
+In [Regression Study](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Regression_study) Regression Study folder you will find the following codes: 
 
 * [MC_Dropout_homo](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Regression_study/MC_Dropout_homo.py) - Neural Network with Homoscedastic MC dropout
 * [MC_dropout_hetero](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Regression_study/MC_dropout_hetero.py) - Neural Network with Heteroscedastic MC dropout
-* [Bayesian_NN](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Regression_study/Bayesian_NN.py)- Hamiltonian Bayesian Neural Network.
+* [Bayesian_NN](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Regression_study/Bayesian_NN.py) - Hamiltonian Bayesian Neural Network.
 
-In _Qlearning_ folder you will find the following codes:
+In[qlearning](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning.py) folder you will find the following codes:
 
 * [qlearning_cartpole_dropout](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning/qlearning_cartpole_dropout.py) - where you will find qlearning simulation with Dropout
-* [post_prod](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning/post_prod.py) - where you will find post production.
+* [post_prod](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning/post_prod.py) - where you will find post production( + csv files and gif )
+
 
 ## The architecture of the network
 
