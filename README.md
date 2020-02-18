@@ -118,6 +118,7 @@ General plot of the states reached by the cartpole during an episode of the trai
 </p>
 
 Then we plot the variance with some of the variables of the state, in order to see if some particular states are linked to some particular points of the evolution of the variance.
+
 General plot of the angles reached by the cartpole during an episode of the training and the corresponding variance (of going left and right):
 
 <p align="middle">
