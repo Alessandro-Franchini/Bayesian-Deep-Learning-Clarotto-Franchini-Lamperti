@@ -68,7 +68,7 @@ The Bayesian NN gives good results. The function is well learnt and the uncer- t
 
 
 <p float="left">
-  <img src="images/hemiltonian_bayes.png" width="400" />
+  <img src="images/hamiltonian_bayes.png" width="400" />
   <img src="images/mc_dropout_heteroscedastic.png" width="400" />
 </p>
 
