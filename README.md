@@ -23,6 +23,7 @@ In [qlearning](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Cl
 
 * [qlearning_cartpole_dropout](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning/qlearning_cartpole_dropout.py) - where you will find qlearning simulation with Dropout (the Cartpole problem)
 * [post_prod](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/blob/master/Project/Qlearning/post_prod.py) - where you will find post production (plots and analysis)
+
 Moreover, you will find some files .csv (and the .gif files, equally named) corresponding to previously run simulations of qlearning (if you want just to plot results without running a new simulation)
 
 ## Installation guide
