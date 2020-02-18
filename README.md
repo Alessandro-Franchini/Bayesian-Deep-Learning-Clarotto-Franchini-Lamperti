@@ -36,8 +36,7 @@ The process of coding and analysing the Bayesian Neural Network and the Neural N
 3. Find the architecture of the Neural Network in which each method works best;
 4. Test the two methods on the same function 
  
-                                 $$ *f (x) = sin(3(x + 2) − (x + 2)^2) + exp(−0.2x)* $$
-
+                                     $$f \ (x)=\sin{(3(x+2)-(x+2)^2)}+\exp{(-0.2x)}$$
 
 We choose to maintain the same number of layers (2 hidden layers) and the same activation functions (_sin_ for the first layer, _ReLU_ for the second layer).
 
@@ -49,7 +48,7 @@ The only variable that changes between the two nets is the number of nodes in ea
 
 In the Neural Network with dropout, it’s necessary to choose which type of residuals must be used. We test the network with both homoscedastic residuals and heteroscedastic residuals.
 
-If we use homoscedastic residuals, we fix the variance for all data to σ2 = (0.3)^2, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
+If we use homoscedastic residuals, we fix the variance for all data to $\sigma^2=(0.3)^2$, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
 
-
+![Example screenshot](./Figure_4_p_05/.png)
 
