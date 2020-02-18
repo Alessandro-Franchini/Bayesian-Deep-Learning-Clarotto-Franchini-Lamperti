@@ -114,7 +114,7 @@ In the following figure, we first plot the 4 variables that characterize every s
 General plot of the states reached by the cartpole during an episode of the training:
 
 <p f align="middle">
-  <img src="images/state.png" width="400"  />
+  <img src="images/statee.png" width="400"  />
 </p>
 
 Then we plot the variance with some of the variables of the state, in order to see if some particular states are linked to some particular points of the evolution of the variance.
