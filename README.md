@@ -12,6 +12,7 @@ In this project we aim at comparing a Bayesian Neural Network trained with Hamil
 
 ## Structure
 Some useful hints about our Github.
+In [Papers](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Papers) you will find the bibliography used in the study.
 
 In [Regression Study](https://github.com/Alessandro-Franchini/Bayesian-Deep-Learning-Clarotto-Franchini-Lamperti/tree/master/Project/Regression_study) folder you will find the following codes, all regarding the regression with Neural Networks with a Bayesian approach: 
 
@@ -40,9 +41,9 @@ pip install .
 
 ## The architecture of the network
 
-The process of coding and analysing the Bayesian Neural Network and the Neural Network with Dropout is composed of different steps:
+The process of coding and analyzing the Bayesian Neural Network and the Neural Network with Dropout is composed of different steps:
 
-1. Train theBayesianNN with Hamiltonian MonteCarlo with the library Hamiltorch;
+1. Train the BayesianNN with Hamiltonian MonteCarlo with the library Hamiltorch;
 2. Train the NN with dropout with homoscedastic and heteroscedastic dropout (p = 0.7, i.e 30% of missing nodes); 
 3. Find the architecture of the Neural Network in which each method works best;
 4. Test the two methods on the same function 
@@ -50,7 +51,7 @@ The process of coding and analysing the Bayesian Neural Network and the Neural N
                               f (x) = sin(3(x + 2) − (x + 2)^2) + exp(−0.2x)
 
 
-We choose to maintain the same number of layers (2 hidden layers) and the same activation functions (_sin_ for the first layer, _ReLU_ for the second layer).
+We choose to use the same number of layers (2 hidden layers) and the same activation functions (_sin_ for the first layer, _ReLU_ for the second layer).
 
 The only variable that changes between the two nets is the number of nodes in each layer. We aim at using two nets which give the results in almost the same time. The architecture that makes the duration of the training similar is a Bayesian NN with 5 nodes in each layer and an NN with Dropout with a much larger number of nodes in each layer (300 nodes). We must consider that a part of those are switched off during each forward pass (only 70% of them contribute to the network).
 
@@ -60,7 +61,7 @@ The only variable that changes between the two nets is the number of nodes in ea
 
 In the Neural Network with dropout, it’s necessary to choose which type of residuals must be used. We test the network with both homoscedastic residuals and heteroscedastic residuals.
 
-If we use homoscedastic residuals, we fix the variance for all data to  σ= 0.3, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
+If we use homoscedastic residuals, we fix the variance for all data to  σ= 0.3^2, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
 
 
 If we look at the results of the neural network, we see that the uncertainty varies a lot in the two cases. When the dropout is applied with homoscedastic residuals, the uncertainty is underestimated, especially when the function becomes periodic. When the residuals are heteroscedastic and are learnt during the training phase, we remark a higher uncertainty where the function is periodic.
@@ -128,7 +129,7 @@ General plot of the angles reached by the cartpole during an episode of the trai
 </p>
 
 
-If we look at figures above, We can see that the variance of the decision the neural network makes is linked with the values of the angle that the pole makes with respect to the cart. We can clearly see that at t = 22, when the pole is strongly tilted towards the left (high negative angle), the variance of the cart decision to go right, which will make the system survive longer, is much less then the variance of the cart decision to go right. It seems that the net understands the fact that if the angle is negative, it must go to the right, otherwise the uncertainty of going to the left is much higher. This insight can be used to make the training even more efficient, since by looking at the uncertainties, we can have a clue of what the net has learned about the phenomenon.
+If we look at figures above, we can see that the variance of the decision the neural network makes is linked with the values of the angle that the pole makes with respect to the cart. We can clearly see that at t = 22, when the pole is strongly tilted towards the left (high negative angle), the variance of the cart decision to go right, which will make the system survive longer, is much less then the variance of the cart decision to go right. It seems that the net understands the fact that if the angle is negative, it must go to the right, otherwise the uncertainty of going to the left is much higher. This insight can be used to make the training even more efficient, since by looking at the uncertainties, we can have a clue of what the net has learned about the phenomenon.
 
 General plot of the positions reached by the cartpole during an episode of the training and the corresponding variance (of going left and right): 
 <p align="middle">
