@@ -72,7 +72,7 @@ If we look at the results of the neural network, we see that the uncertainty var
 </p>
 
 
-**Fitness and uncertainty - Bayesian NN vs. Het- eroscedastic dropout**
+**Fitness and uncertainty - Bayesian NN vs. Heteroscedastic dropout**
 
 We look at the goodness of the fit and at the uncertainty given by the credibility intervals computed on the samples of the neural network.
 The Bayesian NN gives good results. The function is well learnt and the uncer- tainty is pretty high, especially outside the training area. The MC dropout gives almost perfect predictions and null uncertainty in U(x = 0), but underestimates the uncertainty out of the central more linear part.
@@ -83,7 +83,7 @@ The Bayesian NN gives good results. The function is well learnt and the uncer- t
   <img src="images/mc_dropout_heteroscedastic.png" width="400" />
 </p>
 
-**Fitness and uncertainty - Bayesian NN vs. Het- eroscedastic dropout**
+**Fitness and uncertainty - Bayesian NN vs. Heteroscedastic dropout**
 
 The last comparison we do is about the resilience of the networks when some outliers are added. We aim at seeing what is the method that better works when some wrong data form the training dataset. We test the two networks with 8 outliers inserted be- tween 0.5 and 2, all randomly selected around y = 2 with σ = 0.3.
 
