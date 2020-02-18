@@ -51,5 +51,5 @@ In the Neural Network with dropout, it’s necessary to choose which type of res
 
 If we use homoscedastic residuals, we fix the variance for all data to sigma^2=(0.3)^2, so that the training data have the exatly same design as in the bayesian NN. Instead, if we choose to have heteroscedastic residuals, the variance depends on the variability of data. The residuals are learnt during the training process.
 
-![MC Dropout Homoscedastic](images\MC_homo.png)
-![MC Dropout Homoscedastic](images\mc_etero.png)
+![MC Dropout Homoscedastic](images/MC_homo.png)
+![MC Dropout Homoscedastic](images/mc_etero.png)
